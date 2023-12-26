@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style3.css ">
+</head>
+<body>
+    <div class="main">
+        <div class=" h-100 row d-flex justify-content-center align-items-center">
+            <div class="col-lg-8 col-xl-6 rounded-4 shadow-lg ">
+                <div class="mt-5">
+                    <h3 class="text-center mb-3">Registration</h3>
+                    <form>
+                        <div class="form-group row mb-2 mx-3">
+                            <label for="inputFirstName" class="col-sm-3 col-form-label">First Name</label>
+                            <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputFirstName" required placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-2 mx-3">
+                            <label for="inputLastName" class="col-sm-3 col-form-label">Last Name</label>
+                            <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputLastName" required placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-2 mx-3">
+                            <label for="inputLastName" class="col-sm-3 col-form-label">Date Of birth</label>
+                            <div class="col-sm-9">
+                            <input type="date" class="form-control" id="inputLastName" required placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-2 mx-3">
+                            <label for="emailField" class="col-sm-3 col-form-label">Email</label>
+                            <div class="col-sm-9">
+                            <input type="emailField" class="form-control" id="emailfield" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])" required placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-2 mx-3">
+                            <label for="inputPassword3" class="col-sm-3 col-form-label">Password</label>
+                            <div class="col-sm-9">
+                            <input type="password" class="form-control" id="inputPassword3" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-2 mx-3">
+                            <label for="daysSelect" class="col-sm-3 col-form-label">Days</label>
+                            <div class="col-sm-9">
+                                <select class="form-select" name="days" id="daysSelect">
+                                    <option value="monday">Monday</option>
+                                    <option value="tuesday">Tuesday</option>
+                                    <option value="wednesday">Wednesday</option>
+                                    <option value="thursday">Thursday</option>
+                                    <option value="friday">Friday</option>
+                                    <option value="saturday">Saturday</option>
+                                    <option value="sunday">Sunday</option>
+                                </select>
+                            </div>
+                        </div>
+                        <fieldset class="form-group mb-2 ">
+                            <div class="row mx-3">
+                            <legend class="col-form-label col-sm-3 pt-0">Qaulification</legend>
+                            <div class="col-sm-9">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="qaulificationRadios" id="qaulificationRadios1" value="undergraduate" checked>
+                                    <label class="form-check-label" for="qaulificationRadios1">
+                                        Under Graduate
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="qaulificationRadios" id="qaulificationRadios2" value="postgraduate">
+                                    <label class="form-check-label" for="qaulificationRadios2">
+                                        Post Graduate
+                                    </label>
+                                </div>
+                                
+                            </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-group row mx-3">
+                            <div class="col-sm-3">Languages</div>
+                            <div class="col-sm-9">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="cCheckBox" name="languagesCbs">
+                                <label class="form-check-label" for="cCheckBox">
+                                C
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="C++checkbox" name="languagesCbs">
+                                <label class="form-check-label" for="C++checkbox">
+                                C++
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="javaCheckBox" name="languagesCbs">
+                                <label class="form-check-label" for="javaCheckBox">
+                                Java
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="pythonCheckBox" name="languagesCbs">
+                                <label class="form-check-label" for="pythonCheckBox">
+                                Python
+                                </label>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="form-group row text-center my-2">
+                            <div class="">
+                            <button type="submit" class="btn btn-primary">Register</button>
+                            </div>
+                        </div>
+                    </form>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
